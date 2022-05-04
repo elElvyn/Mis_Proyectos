@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario en HTML</title>
+    <link rel="Icon" href="imagenes/logo.jpg">
+    <style>
+        fieldset{
+            background-color: white;
+        }
+        .header{
+    background-color: burlywood;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    list-style: none;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 70000px;
+    margin: 0 auto;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+    </style>
+</head>
+<body bgcolor="#F6DDCC">
+    <header class="header">
+        <nav class="nav">
+            <a href="proyectos.html" class="logo nav-link">Inicio</a>
+        </nav>
+    </header><br><br><br><br><br><br><br><br>
+
+    <h1>Formlario en HTML</h1>
+    <form>
+        <fieldset>
+        <legend>Datos Persona</legend>
+
+        <label for="ID">Id Persona</label><br>
+        <input type="text" name="ID" placeholder="Ingrese su identidad"><br>
+        <label for="Email">Correo:</label><br>
+        <input type="text" name="ID" placeholder="Ingrese su correo"><br>
+        <label for="Edad">Edad:</label><br>
+        <input type="number" placeholder="Ingrese su edad"><br>
+        <label for="genero">Género:</label><br>
+        <input type="radio" id="fememino" name="genero" value="femenino">
+        <label for="femenino">Femenino</label>
+        <input type="radio" id="Masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="Otro" name="genero" value="NoDefinido">
+        <label for="femenino">Otros</label><br>
+        <label>Nombre:</label><br>
+        <input type="text" placeholder="Ingrese su nombre"><br>
+        <label>Apellido:</label><br>
+        <input type="text" placeholder="Ingrese su apellido"><br>
+        <label>Contraseña</label><br>
+        <input type="password" placeholder="Ingrese su contraseña"><br>
+        <!--gustos musicales-->
+        <label>Musica Favorita</label><br>
+        <input type="checkbox" id="Clasisc" name="musica" value="clasica">
+        <label for="musica">Clasica</label><br>
+        <input type="checkbox" id="Rock" name="musica" value="clasica">
+        <label for="musica">Rock</label><br>
+        <input type="checkbox" id="Jazz" name="musica" value="clasica">
+        <label for="musica">Jazz</label><br>
+        <!--autos-->
+        <label>Marcas de autos favoritas</label><br>
+
+        <select name="auto" id="autos">
+            <option value="Buggati">Buggati</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Ford">Ford</option>
+            <option value="Toyota">Toyota</option>
+        </select><br>
+
+        <label for="comentarios">Observaciones:</label><br>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="2" placeholder="Agregue su comentario"></textarea><br>
+        <input type="submit" id="enviar" value="Enviar">
+        <input type="reset" id="enviar" value="Enviar">
+
+    </fieldset>
+    </form>
+
+</body>
+</html>
